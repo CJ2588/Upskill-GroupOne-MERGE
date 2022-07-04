@@ -1,0 +1,560 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background-image: url(images/technology/background-technology-desktop.jpg);
+    max-width: 100%;
+    max-height: 100%; 
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* Header 1 */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    width: 100%;
+}
+
+header .imglogo {
+    margin-left: 90px;
+    margin-top: 35px;
+}
+
+header .imgmenu{
+    display: none;
+}
+
+header .line {
+    height:2px;
+    width:800px;
+    background-color:  rgb(71, 71, 71);
+    margin-top: 50px;
+    margin-left: 200px;
+}
+
+header .nav{
+    background-color: rgb(1, 1, 17);
+    color: white;
+    width: 800px;
+    border: 25px solid rgb(1, 1, 17);
+    position: relative;
+}
+
+header .nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;  
+}
+
+
+header .nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header 1 ends */
+
+/* Second header */
+
+
+
+.heading .H2 {
+
+    color: white;
+    margin-left: 190px;
+    margin-top: 50px;
+    word-spacing: 15px;
+    font-size: 20px;
+}
+
+.heading .H2 .N3 {
+    color: rgb(22, 22, 77);
+}
+
+
+/* second header ends */
+
+/* content */
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.numbers {
+    color: white;
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: 60px;
+    cursor: pointer;
+    transition: o.5 ease;
+}
+
+.numbers .circle {
+    border: 1px solid;
+    transform: translateY(-50%);
+    border-color: gray;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    margin-top: 100px;
+    position: relative;
+}
+
+.circle:hover {
+    background-color: white;
+    transition: 1s ease;
+}
+
+.numbers .click {
+    position: absolute;
+    width: inherit;
+    height: auto;
+    top: -75%;
+    text-align: center;
+    left: 0px;
+}
+
+.click:hover {
+    color: black;
+    transition: 1s ease;
+
+}
+
+
+.writings{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 410px;
+    overflow: hidden;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+.writeup {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: white;
+}
+
+.writings .p2{
+    font-size: 50px;
+}
+
+.writings .p3 {
+    width: 375px;
+    font-size: 20px;
+}
+
+.writings .One{
+    animation: move 119s infinite;
+}
+
+@keyframes move{
+    0%{
+        margin-top: 0;
+    }
+
+    20%{
+        margin-top: -400px;
+    }
+
+    40%{
+        margin top: -800px;
+    }
+
+    60%{
+        margin-top: -800px;
+    }
+
+    80%{
+        margin-top: -400px;
+    }
+    100%{
+        margin top: 0px;
+    }
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: 400px;
+    
+}
+
+
+.img .img1 {
+    height: 600px;
+    
+}
+
+.img .img2 {
+    height: 600px;
+    margin-top: 30px;
+}
+
+.img .img3 {
+    height: 600px;
+    margin-top: 30px;
+}
+
+.image .img {
+    animation: up 120s infinite;
+}
+
+@keyframes up{
+    0%{
+        margin-top: 0;
+    }
+
+    25% {
+        margin-top: -630px;
+    }
+
+    50%{
+        margin-top: -1260px;
+    }
+
+    75% {
+        margin-top: -630px;
+    }
+
+    100%{
+        margin-top: 0px;
+    }
+}
+
+/* responsiveness */
+
+/* Tablet */
+
+@media only screen and (max-width: 1300px) {
+    header{
+        margin-top: 0;
+    }
+
+    header .imgmenu{
+        display: none;
+    }
+
+    header .imglogo {
+        margin-left: 0px;
+    }
+
+    header .nav{
+        border: 20px solid rgb(1, 1, 17);
+        margin-left: 50px;
+        
+    }
+    
+    header .line {
+        height:0px;
+        width:0px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+
+    .heading .H2 {
+        margin-left: 100px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;     
+        margin-top: 0px;
+    }
+
+    .numbers{
+        display: flex;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 270px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .writings{
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .writeup{
+        align-items: center;
+        width: 600px;
+        margin-top: 0px;
+        margin-left:0px;
+    }
+
+    .writeup .p3 {
+        align-items: center;
+        width: 550px;
+    }
+
+    .writings .One{
+        animation: move 200s infinite;
+    }
+    
+    @keyframes move{
+        0%{
+            margin-left: 0px;
+        }
+    
+        25%{
+            margin-left: -600px;
+        }
+    
+        50%{
+            margin-left: -1200px;
+        }
+    
+        75%{
+            margin-left: -600px;
+        }
+    
+        100%{
+            margin-left: 0px;
+        }
+    }
+
+    .image {
+        display: flex;
+        flex-direction: row;
+        height: 300px;
+        width: 800px;
+        object-fit: cover;
+        overflow: hidden;
+        margin-left: 0px;
+        
+    }
+
+    .img {
+        display: flex;
+        align-items: center;
+    }
+    
+    
+    .img .img1 {
+        height: 400px;
+        width: 820px;
+        object-fit: fill;
+        
+    }
+    
+    .img .img2 {
+        height: 400px;
+        width: 820px;
+        /* margin-left: 30px; */
+    }
+    
+    .img .img3 {
+        height: 400px;
+        width: 820px;
+        /* margin-left: 30px; */
+    }
+    
+    .image .img {
+        animation: up 200s infinite;
+    }
+    
+    @keyframes up{
+        0%{
+            margin-left: 0;
+        }
+    
+        25% {
+            margin-left: -820px;
+        }
+    
+        50%{
+            margin-left: -1640px;
+        }
+    
+        75% {
+            margin-left: -820px;
+        }
+    
+        100%{
+            margin-left: 0px;
+        }
+    }
+    
+}
+
+/* Tablet responsivess ends */
+
+/* Phone responsiveness */
+
+@media only screen and (max-width: 600px) {
+    
+    header .nav{
+        background-color: rgb(1, 1, 17);
+        color: white;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        right: -5px;
+        z-index: 2;
+        border: 0px;
+    }
+
+    header .imgmenu{
+        display: block;
+        margin-left: 250px;
+        margin-top: 23px;
+        cursor: pointer;
+    }
+    
+    header .imglogo {
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .heading .H2 {
+        color: white;
+        margin-left: 30px;
+        margin-top: 60px;
+        word-spacing: 15px;
+        font-size: 18px;
+    }
+    
+    .numbers {
+    margin-left: 0px;
+    margin-top: -50px;
+}
+
+.writings{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 410px;
+    overflow: hidden;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.writeup {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    color: white;
+}
+
+.writings .p2{
+    font-size: 45px;
+}
+
+.writings .p3 {
+    width: 350px;
+    font-size: 20px;
+}
+
+.writings .One{
+    animation: move 200s infinite;
+}
+
+@keyframes move{
+    0%{
+        margin-left: 0px;
+    }
+
+    25%{
+        margin-left: -500px;
+    }
+
+    50%{
+        margin-left: -1000px;
+    }
+
+    75%{
+        margin-left: -500px;
+    }
+
+    100%{
+        margin-left: 0px;
+    }
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 800px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-left: 0px;
+    
+}
+
+.img {
+    display: flex;
+    align-items: center;
+}
+
+
+.img .img1 {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    align-items: center;
+    
+}
+
+.img .img2 {
+    height: 400px;
+    width: 600px;
+    /* margin-left: 30px; */
+}
+
+.img .img3 {
+    height: 400px;
+    width: 600px;
+    /* margin-left: 30px; */
+}
+
+.image .img {
+    animation: up 200s infinite;
+}
+
+@keyframes up{
+    0%{
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -500px;
+    }
+
+    50%{
+        margin-left: -1000px;
+    }
+
+    75% {
+        margin-left: -500px;
+    }
+
+    100%{
+        margin-left: 0px;
+    }
+}
+}
+
+/* responsiveness mobile end */
