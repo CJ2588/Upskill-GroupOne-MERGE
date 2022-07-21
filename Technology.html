@@ -12,18 +12,28 @@
         <div>
             <img id="menu" class="imglogo" src="images/shared/logo.svg" alt="logo of company">
         </div>
-        <div>
-            <img class="imgmenu" onclick="tooglemenu" src="images/shared/icon-hamburger.svg" alt="Menu-image">
-        </div>
+        <button class="imgmenu" aria-controls="menubtn" aria-expanded="false">
+           <!-- <span class="sr-only">Menu</span> -->
+        </button>
         <div class="line">
             
         </div>
-        <nav class="nav">
-            <ul id="menubtn">
-                <li><a href="index.html"> 00  Home </a></li>
-                <li><a href="destination-moon.html"> 01  Destination</a></li>
-                <li><a href="Crew.html"> 02  Crew</a></li>
-                <li><a href="Technology.html"> 03  Technology</a></li>
+        <nav class="nav" data-visible="false">
+            <ul id="menubtn" >
+                <li class="active">
+                    <a href="index.html"> <span aria-hidden="true"> 00 </span> Home 
+                    </a>
+                </li>
+                <li>
+                    <a href="destination-moon.html"> <span aria-hidden="true"> 01 </span> Destination
+                    </a>
+                </li>
+                <li><a href="Crew.html"> <span aria-hidden="true"> 02</span>  Crew
+                    </a>
+                </li>
+                <li><a href="Technology.html"> <span aria-hidden="true"> 03</span>  Technology
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -45,22 +55,31 @@
         <section class="content">
                 <!-- Numbers -->
 
-                <section class="numbers">
-                    <div class="circle">
-                        <h3 class="click">1</h3>
-                    </div>
-                    <div class="circle">
-                        <h3 class="click">2</h3>
-                    </div>
-                    <div class="circle">
-                        <h3 class="click">3</h3>
-                    </div>
+                <section class="numbers" id="btn">
+                    <button class="slidebtn current-slide">
+                        <div class="circle">
+                            <h3 class="click">1</h3>
+                        </div>
+                    </button>
+                    <button class="slidebtn ">
+                        <div class="circle">
+                            <h3 class="click">2</h3>
+                        </div>
+                    </button>
+                    <button class="slidebtn">
+                        <div class="circle">
+                            <h3 class="click">3</h3>
+                        </div>
+                    </button>
                 </section>
 
                 <section class="writings">
-                    <!-- First Section -->
-                    <Section class="One">
-                        <div class="writeup">
+                
+                    <div class= "write">
+
+                        <!-- First Section -->
+
+                        <div class=" One writeup current-writeup">
                         
                             <p class="p1">
                                 THE TERMINOLOGY........
@@ -76,16 +95,15 @@
                                 Standing 150 meteres tall, it's quite an awe-inspiring sight
                                 on the lauch pad!
                             </P>
-                           
+                            
                         </div>
-                    </Section>
-
-                    <!-- Second section -->
-                    <Section class="Two">
+                    
+                        <!-- Second section -->
+                    
                         <div class="writeup">
                             
                             <p class="p1">
-                                THE TERMINOLOGY.......
+                                    THE TERMINOLOGY.......
                             </p>
                             <P class="p2">
                                 SPACEPORT
@@ -97,14 +115,13 @@
                                 Canaveral,our spaceport is ideally situated to take 
                                 advantage of the Earth's rotation for Lauch.
                             </P>
-                           
-                        </div>
-                    </Section>
-
-                    <!-- Thrid section -->
-                    <Section class="Three">
-                        <div class="writeup">
                             
+                        </div>
+                    
+                        <!-- Thrid section -->
+                    
+                        <div class="writeup">
+                        
                             <p class="p1">
                                 THE TERMINOLOGY......
                             </p>
@@ -120,14 +137,15 @@
                                 entertained. 
                             </P>
                         </div>
+                    
+                    </div>
                        
-                        
-                    </Section>
               </section>
+
               <!-- image section -->
               <section class="image">
                 <div class="img">
-                   <div class="pic">
+                   <div class="pic current-slide" >
                         <img class="img1" src="images/technology/image-launch-vehicle-portrait.jpg" alt="Image of lauch vehicle">
                    </div>
                     <div class="pic">
