@@ -226,7 +226,7 @@ header .nav ul li a > [aria-hidden="true"] {
 }
 
 .cards {
-    margin-top: 100px;
+    margin-top: 300px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -260,7 +260,7 @@ header .nav ul li a > [aria-hidden="true"] {
 }
 
 .card button{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #card1 {
@@ -274,7 +274,7 @@ header .nav ul li a > [aria-hidden="true"] {
 
 
 #card3 {
-    background-color: gold;
+    background-color: #cfb53b;
 }
 
 #card1 .card-btn:hover,
